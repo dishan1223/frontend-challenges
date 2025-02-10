@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primary-color: #cc041e;
+    --primary-text-color: black;
+    --secondary-text-color: white;
+}
+
+html, body {
+  overflow-y: auto; /* Keeps vertical scrolling */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.wrapper{
+    margin: auto;
+    width: 90%;
+}
+
+.logo h1{
+    color: var(--secondary-text-color);
+    font-size: 1.375rem;
+}
+
+header{
+    margin-top: 2.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8.75rem;
+}
+
+nav{
+    display: none;
+}
+
+
+.hero__section{
+    height: 100dvh;
+    display: flex;
+    overflow: hidden;
+}
+
+
+.hero__right{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateX(-200px);
+}
+.hero__img{
+    height: 100dvh;
+}
+
+.hero__text_left h1, .hero__text_left p{
+    color: var(--secondary-text-color)
+}
+.hero__text_left h1{
+    margin-bottom: 0.938rem;
+    font-size: 3.875rem;
+    line-height: 4.549rem;
+}
+.hero__text_left p{
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.063rem;
+    margin-bottom: 4.188rem;
+}
+
+.shoe__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.img img{
+    height: 204px;
+    width: 142px;
+}
+.shoe__info_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    margin-bottom: 2rem;
+}
+.container2{
+    flex-direction: row-reverse;
+}
+
+@media (min-width: 623px) {
+    .img img{
+        width: 250px;
+    }
+}
+
+@media (min-width: 700px) {
+    .hero__right {
+        
+        top: 0;
+        right: 0;
+        left: auto; /* Ensure it stays on the right */
+        transform: translateX(100px); /* Reset the previous transform */
+    }
+    .logo h1{
+        color: var(--primary-text-color);
+        font-size: 2.375rem;
+    }
+    .hero__text_left h1, .hero__text_left p{
+        color: var(--primary-text-color);
+        width: 550px;
+    }
+    .ham{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 1623px) {
+    .logo span{
+        color: var(--primary-color);
+    }
+}
