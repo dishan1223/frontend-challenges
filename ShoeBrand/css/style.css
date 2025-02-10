@@ -126,7 +126,7 @@ nav{
     
 }
 
-@media (max-width: 1623px) {
+@media (min-width: 1623px) {
     .logo span{
         color: var(--primary-color);
     }
