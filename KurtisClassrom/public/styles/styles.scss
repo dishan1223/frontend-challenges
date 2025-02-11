@@ -1,7 +1,23 @@
-$primary-color: #3498db;
+@use '_resets.scss';
+@use '_variables.scss' as *;
+
 
 body {
-  background: $primary-color;
-  font-family: Arial, sans-serif;
+  font-family: $primary-font;
 }
 
+.wrapper{
+  width: 100%;
+  height: 100dvh;
+}
+
+header{
+  .logo{
+    display: flex;
+
+    h1{
+      font-family: $logo-font;
+    }
+
+  }
+}
