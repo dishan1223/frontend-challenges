@@ -12,12 +12,36 @@ body {
 }
 
 header{
+  margin: auto auto;
+  margin-top: 43px;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 140px);
+
   .logo{
     display: flex;
 
     h1{
       font-family: $logo-font;
     }
-
+  }
+  nav{
+    gap: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .btn1{
+      margin-right: 20px;
+      color: $white-color;
+      background-color: $primary-blue;
+    }
+    button{
+      height: 44px;
+      width: 110px;
+      border-radius: 3px;
+      border: none;
+      font-size: 16px;
+    }
   }
 }
