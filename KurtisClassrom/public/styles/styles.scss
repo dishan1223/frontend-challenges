@@ -20,9 +20,13 @@ header{
 
   .logo{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 
     h1{
       font-family: $logo-font;
+      transform: translateY(5px);
     }
   }
   nav{
@@ -36,12 +40,21 @@ header{
       color: $white-color;
       background-color: $primary-blue;
     }
+    
     button{
       height: 44px;
       width: 110px;
       border-radius: 3px;
       border: none;
       font-size: 16px;
+    }
+
+    .lang{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
     }
   }
 }
