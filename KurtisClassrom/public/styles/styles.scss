@@ -16,7 +16,7 @@ header{
   margin-top: 43px;
   display: flex;
   justify-content: space-between;
-  width: calc(100% - 140px);
+  max-width: calc(100% - 140px);
 
   .logo{
     display: flex;
@@ -57,4 +57,11 @@ header{
       cursor: pointer;
     }
   }
+}
+
+
+.hero_section{
+  max-width: calc(100% - 140px);
+  margin: auto auto;
+  display: flex;
 }
